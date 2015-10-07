@@ -1,0 +1,14 @@
+language:
+  - python
+
+env:
+  - PYTHONPATH=$PYTHONPATH:/usr/lib/pyshared/python2.7
+
+addons:
+  apt:
+    packages:
+    - libopencv-dev
+    - python-opencv
+
+script:
+  - python test_stencil_validator.py
