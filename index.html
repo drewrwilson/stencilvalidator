@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Stencil Validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cayman.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Stencil Validator</h1>
+      <h2 class="project-tagline">a design tool for determining if your artwork is a valid stencil</h2>
+      <a href="https://github.com/drewrwilson/stencilvalidator" class="btn">View on GitHub</a>
+    </section>
+
+    <section class="main-content">
+      <hr>
+      <p>
+        <strong>This project is a work-in-progress. </strong> It is not ready to be used yet. <br><br>
+          Once this software is more complete, this webpage will be updated with instructions on how to use this tool. At this point, this webpage is just intended to explain the goal of project. <em>And maybe this page will inspire you to get involved and contribute to this open source project!</em>
+      </p>
+      <hr>
+
+      <div class="img-previews">
+        <img src="img/stencil-examples.jpg" alt="" style="width:100%" />
+        <!-- <img src="img/stencil-example-black-lives-matter.jpg" alt="" />
+        <img src="img/stencil-example-black-lives-matter-making.jpg" alt="" />
+        <img src="img/stencil-example-digital-heart.jpg" alt="" />
+        <img src="img/stencil-example-digital-heart-print.jpg" alt="" /> -->
+      </div>
+
+      <h1>Stencils need bridges</h1>
+      <p>
+        The biggest challenge in designing stencils is including enough <em>bridges</em>. Bridges are pieces of positive space that protect the integrity of the design. Sometimes bridges are subtle and incorporated into the artwork. Other times they are added after the fact and are very apparent in the design.
+      </p>
+      <p>
+        If you make a mistake and forget a bridge, you may cut out a big piece of your design and need to start over. If your artwork is complicated, it can be difficult to tell if there are have enough bridges and if it will end up cutting properly.
+      </p>
+      <h1>What is <strong>Stencil Validator</strong>?</h1>
+      <p>
+        <strong>Stencil Validator</strong> is software that uses computer vision techniques to "look" at your stencil artwork and tell you whether or not it will make a valid stencil. This tool helps you avoid common pitfalls in stencil design. Before you start cutting your stencil, run it through this sowftare to ensure that it will cut properly.
+         This software does not, however, tell you <em>where</em> you need to put additioanl bridges&#151;that part is up to you.
+         <div style="text-align:center;">
+           <img src="img/valid-invalid-example.png" alt="" />
+         </div>
+
+      </p>
+
+      <h2>What makes a stencil valid?</h2>
+
+      <p>
+        A stencil is valid when the entire design is contiguous, meaning there is no free-standing negative space. A stencil is invalid when there any cuts that are full enclosed by another cut. A common mistake in stencil design is in lettering. Some letters need bridges added in order to make them valid stencils. For example, if your stencil design includes an "a" or an "e", you likely need to add bridges to ensure that you retain the center shape.
+        <div style="text-align:center;">
+          <img src="img/lettering-example.png" alt="" />
+        </div>
+
+      </p>
+
+      <h2>Why use software to validate stencil designs?</h2>
+      <p>
+        Stenciling has always been a very analog art form. Typically an artist will start by drawing artwork by hand, then cut the design with an knife. But now there a way to do make stencils in a digital way using computer-controlled tools&#151;like laser cutters and CNC routers&#151;.
+      </p>
+      <p>
+        These cutting tools are often available for use at maker spaces, which makes it easier for artists to cut stencils, but there isn't yet a good design process for creating stencils digitally. <strong>Stencil Validator</strong> is one part of a workflow for designing stencil-artwork on a computer. The goal is to have a tool that makes it easier for someone to design a stencil on a computer and then send the file to a laser cutter or CNC router to be cut.
+      </p>
+
+      <h2>How do I use <strong>Stencil Validator</strong>?</h2>
+      <p>
+        Right now, you can't. It is not ready to be used yet. We're working on it. Check back later. When the software is more complete, we'll add howto instructions here. And if you are interested in helping us make it, check out <a href="https://github.com/drewrwilson/stencilvalidator">the project on github</a>. The code is in python and uses opencv. If you have experience with opencv, we could use your help.
+
+      </p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/drewrwilson/stencilvalidator">Stencil Validator</a> is made by <a href="https://twitter.com/drewSaysGoVeg">Drew Wilson</a> and <a href="https://twitter.com/waltz">CJ Bryan</a>.</span>
+      </footer>
+
+    </section>
+
+  </body>
+</html>
