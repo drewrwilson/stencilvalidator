@@ -39,7 +39,8 @@ if __name__ == '__main__':
     # cap = video.create_capture(fn)
     while True:
         # flag, img = cap.read()
-        img  = cv2.imread('test-stencils/invalid-black-lives-matter-stencil.png')
+        # img  = cv2.imread('test-stencils/invalid-black-lives-matter-stencil.png')
+        img  = cv2.imread('test-stencils/invalid-black-lives-matter-stencil-inverse.png') #inverse
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         thrs1 = cv2.getTrackbarPos('thrs1', 'edge')
         thrs2 = cv2.getTrackbarPos('thrs2', 'edge')
